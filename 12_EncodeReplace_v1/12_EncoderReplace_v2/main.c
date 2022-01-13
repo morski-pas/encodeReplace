@@ -3,7 +3,7 @@
 #include <avr/interrupt.h>
 
 // Library
-volatile void (*pRecepionCallback)(uint8_t data);
+void (*pRecepionCallback)(uint8_t data);
 
 void uart0_registerReceptionCallback(void (*pCallback)(uint8_t data))
 {

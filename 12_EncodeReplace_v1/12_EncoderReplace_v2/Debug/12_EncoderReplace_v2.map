@@ -490,11 +490,11 @@ END GROUP
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x00000000      0xf78
+.debug_info     0x00000000      0xf66
  *(.debug_info .gnu.linkonce.wi.*)
  .debug_info    0x00000000      0xbbc C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega2560/avr6/crtatmega2560.o
- .debug_info    0x00000bbc      0x22e main.o
- .debug_info    0x00000dea      0x18e C:\Users\simon\_Daten\KLASSE4\FSST\50_Portfolio\20_MikroController\lib\libuart0.a(library.o)
+ .debug_info    0x00000bbc      0x21c main.o
+ .debug_info    0x00000dd8      0x18e C:\Users\simon\_Daten\KLASSE4\FSST\50_Portfolio\20_MikroController\lib\libuart0.a(library.o)
 
 .debug_abbrev   0x00000000      0xd3f
  *(.debug_abbrev)
