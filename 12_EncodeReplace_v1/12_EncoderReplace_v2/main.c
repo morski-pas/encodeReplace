@@ -2,24 +2,7 @@
 #include <uart0.h>
 #include <avr/interrupt.h>
 
-// Library
-void (*pRecepionCallback)(uint8_t data) = NULL; // null indicated that no callback function has been registered yet
 
-void uart0_registerReceptionCallback(void (*pCallback)(uint8_t data))
-{
-    if(pCallback)
-        UCSR0B |= (1 << RXCIE0); // enable reception callback
-
-    else
-        UCSR0B &= ~(1 << RXCIE0); // disable reception callback
-    
-    pRecepionCallback = pCallback;
-}
-
-
-
-
-// Application
 void onDataReceived(uint8_t data)
 {
     switch(data)
@@ -58,13 +41,4 @@ int main(void)
 	init();
 	
 	while (1);
-}
-
-
-ISR(USART0_RX_vect)
-{
-    if(pRecepionCallback)
-    {
-        (*pRecepionCallback)(UDR0);
-    }
 }
