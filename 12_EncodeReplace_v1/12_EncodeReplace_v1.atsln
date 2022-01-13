@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Atmel Studio Solution File, Format Version 11.00
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "12_EncodeReplace_v1", "12_EncodeReplace_v1\12_EncodeReplace_v1.cproj", "{DCE6C7E3-EE26-4D79-826B-08594B9AD897}"
+EndProject
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "uart0", "..\..\..\90_Library\uart0\uart0\uart0.cproj", "{1DCE067C-F6DC-42FC-8DC8-CF8F1F20F484}"
+EndProject
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "12_EncoderReplace_v2", "12_EncoderReplace_v2\12_EncoderReplace_v2.cproj", "{9CE56A8B-ADFF-4D76-A33A-63ECBF96CF43}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1DCE067C-F6DC-42FC-8DC8-CF8F1F20F484} = {1DCE067C-F6DC-42FC-8DC8-CF8F1F20F484}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|AVR = Debug|AVR
+		Release|AVR = Release|AVR
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DCE6C7E3-EE26-4D79-826B-08594B9AD897}.Debug|AVR.ActiveCfg = Debug|AVR
+		{DCE6C7E3-EE26-4D79-826B-08594B9AD897}.Debug|AVR.Build.0 = Debug|AVR
+		{DCE6C7E3-EE26-4D79-826B-08594B9AD897}.Release|AVR.ActiveCfg = Release|AVR
+		{DCE6C7E3-EE26-4D79-826B-08594B9AD897}.Release|AVR.Build.0 = Release|AVR
+		{1DCE067C-F6DC-42FC-8DC8-CF8F1F20F484}.Debug|AVR.ActiveCfg = Debug|AVR
+		{1DCE067C-F6DC-42FC-8DC8-CF8F1F20F484}.Debug|AVR.Build.0 = Debug|AVR
+		{1DCE067C-F6DC-42FC-8DC8-CF8F1F20F484}.Release|AVR.ActiveCfg = Release|AVR
+		{1DCE067C-F6DC-42FC-8DC8-CF8F1F20F484}.Release|AVR.Build.0 = Release|AVR
+		{9CE56A8B-ADFF-4D76-A33A-63ECBF96CF43}.Debug|AVR.ActiveCfg = Debug|AVR
+		{9CE56A8B-ADFF-4D76-A33A-63ECBF96CF43}.Debug|AVR.Build.0 = Debug|AVR
+		{9CE56A8B-ADFF-4D76-A33A-63ECBF96CF43}.Release|AVR.ActiveCfg = Release|AVR
+		{9CE56A8B-ADFF-4D76-A33A-63ECBF96CF43}.Release|AVR.Build.0 = Release|AVR
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
